@@ -8,7 +8,7 @@ const SearchBar= (prop)=>{
     {
         (prop.selectedSkills).map((item,index)=>{
        return   (prop.selectedSkills.length <6)?
-        <p key={index}>{item}<Button classname='delete' click={prop.deleteAction} text=<ClearRoundedIcon  sx={{fontSize:"17px", color: "#fff", fontWeight:""}} />/></p>
+        <p key={index}>{item}<Button classname='delete' click={()=> prop.deleteAction(item)} text=<ClearRoundedIcon  sx={{fontSize:"17px", color: "#fff", fontWeight:""}} />/></p>
             :null;
         })
     }

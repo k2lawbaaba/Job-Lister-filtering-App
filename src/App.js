@@ -38,15 +38,23 @@ function App() {
     setSelectedSkills([])
   }
 
-const handleDelete=(e)=>{
-  e.preventDefault()
+const handleDelete=(skill)=>{
+  if((filterArray.length-1) <1) {
+  Clear();
+  }else{
+    const newArray = filterArray.filter((key) => key !== skill);
+  setFilterArray(newArray);
+
   }
+      
+}
+  
   return (
     <div className="App">
     <header></header>
   
     <div className="cardDiv">
-    { (isClicked) && <SearchBar clearAction={Clear} selectedSkills={filterArray} />}
+    { (isClicked) && <SearchBar clearAction={Clear} selectedSkills={filterArray} deleteAction={handleDelete} />}
 
     {filterData.map(item=>{
       return <Card 
