@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(180, 52%, 96%);
+    font-family: 'League Spartan', sans-serif;
+}
+header{
+    height: 10rem;
+    background-image: url(images/bg-light-green.jpeg);
+}
+img{
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 14px;
+    border: 0;
+    outline: 0;
+}
+img:hover{
+    width: 7rem;
+    height: 7rem;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(252, 252, 252);
+    margin: 30px 9rem 40px;
+    border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(78, 75, 95, 0.3);
+
+}
+.card:first-child, .card:nth-child(2){
+    border-left: 5px solid  rgb(7, 147, 155) ;
+}
+
+.cardDiv{
+    margin-top: 3rem;
+}
+.avater_Info{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    margin-right: 5vmax;
+}
+.avater{
+    display: inline-block;
+    border: 0;
+    
+}
+.info{
+    margin: 20px auto;
+    margin-left: 0;
+}
+
+.headlines{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.title h3{
+    border: 0;
+    margin:5px auto 5px;
+    background-color:rgb(252, 252, 252) ;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title h3:hover{
+ font-size:large ;
+ color: rgb(65, 121, 123);
+    
+
+}
+.headlines p{
+    padding: 4px;
+    font-size: 16px;
+    font-weight: 900;
+}
+#newly{
+    border: 0;
+    color: #fff;
+    border-radius: 50px;
+    background-color:rgb(104, 181, 184);
+
+}
+#feature{
+    border: 0;
+    color: #fff;
+    border-radius: 50px;
+    background-color:rgb(58, 57, 57);
+}
+#hide{
+    display: none;
+}
+#skill{
+    color: hsl(180, 29%, 50%);
+
+}
+
+.micro_info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 3px;
+
+}
+
+.mini_info{
+    color: rgb(104, 103, 103);
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 40;
+}
+
+.skillButtons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vmax;
+    border: 0;
+    margin-right: 4vmax;
+}
+.skillButtons button{
+    border-radius: 10px;
+    background-color:rgb(230, 236, 236);
+    color: cadetblue;
+    font-size: 15px;
+    border: 0;
+    font-weight: 800;
+    height: 45px;
+    margin: 3vmax auto;
+    padding: .8vmax;
+    cursor: pointer;
+}
+.skillButtons button:hover{
+    background-color:rgb(44, 86, 88) ;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* the Filtering style */
+.filter{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(252, 252, 252) ;
+    margin: -70px 9rem 40px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 13px rgba(78, 75, 75, 0.3);
+
+  }
+  .displayFiltered{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vmax;
+    border: 0;  
+  }
+
+.displayFiltered p{
+    background-color:rgb(230, 236, 236);
+    padding-left: 10px;
+    border-radius: 5px;
+    color: cadetblue;
+    font-weight: 800;
+    height: 34px;
+    font-size: 18px;
+    text-align: center;
+
+}
+  .delete{
+    background-color:rgb(104, 181, 184);
+    border: 0;
+    margin-left: 8px;
+    padding: 8px;
+    height: 34px;
+    border-radius: 0 5px 5px  0;
+    cursor: pointer;
+  }
+
+.delete:hover{
+    background-color:rgb(58, 57, 57);
+} 
+.clear{
+    border: 0;
+    background-color:rgb(252, 252, 252) ;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.clear:hover{
+    font-size: 1.5rem;
+}
