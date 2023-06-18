@@ -29,7 +29,7 @@ img:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: rgb(252, 252, 252);
-    margin: 30px 9rem 40px;
+    margin: 30px 7rem 40px;
     border-radius: 5px;
   box-shadow: 0 5px 35px rgba(78, 75, 95, 0.3);
 
@@ -151,7 +151,7 @@ img:hover{
     display: flex;
     justify-content: space-between;
     background-color:rgb(252, 252, 252) ;
-    margin: -70px 9rem 40px;
+    margin: -70px 7rem 40px;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 5px 13px rgba(78, 75, 75, 0.3);
