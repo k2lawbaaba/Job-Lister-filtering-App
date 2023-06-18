@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Job-Lister-filtering-App/static/css/main.e7fce82a.css",
-    "main.js": "/Job-Lister-filtering-App/static/js/main.4ed5ff04.js",
+    "main.css": "/Job-Lister-filtering-App/static/css/main.c8c14085.css",
+    "main.js": "/Job-Lister-filtering-App/static/js/main.8fe77b37.js",
     "static/media/loop-studios.svg": "/Job-Lister-filtering-App/static/media/loop-studios.7778c957c5751d1502cc.svg",
     "static/media/photosnap.svg": "/Job-Lister-filtering-App/static/media/photosnap.5a867c13a374d62b400f.svg",
     "static/media/manage.svg": "/Job-Lister-filtering-App/static/media/manage.5a528a9669728fb94c8c.svg",
@@ -16,11 +16,11 @@
     "static/media/bg-header-mobile.svg": "/Job-Lister-filtering-App/static/media/bg-header-mobile.b7750a0c3e0c016763b9.svg",
     "index.html": "/Job-Lister-filtering-App/index.html",
     "static/media/icon-remove.svg": "/Job-Lister-filtering-App/static/media/icon-remove.70c075ce001e5ccae7c6.svg",
-    "main.e7fce82a.css.map": "/Job-Lister-filtering-App/static/css/main.e7fce82a.css.map",
-    "main.4ed5ff04.js.map": "/Job-Lister-filtering-App/static/js/main.4ed5ff04.js.map"
+    "main.c8c14085.css.map": "/Job-Lister-filtering-App/static/css/main.c8c14085.css.map",
+    "main.8fe77b37.js.map": "/Job-Lister-filtering-App/static/js/main.8fe77b37.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7fce82a.css",
-    "static/js/main.4ed5ff04.js"
+    "static/css/main.c8c14085.css",
+    "static/js/main.8fe77b37.js"
   ]
 }
