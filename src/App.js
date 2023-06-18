@@ -51,7 +51,7 @@ const handleDelete=(skill)=>{
   
   return (
     <div className="App">
-    <header></header>
+    <header>Ephratah Porte Job Listing</header>
   
     <div className="cardDiv">
     { (isClicked) && <SearchBar clearAction={Clear} selectedSkills={filterArray} deleteAction={handleDelete} />}

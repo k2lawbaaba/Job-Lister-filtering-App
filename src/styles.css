@@ -9,6 +9,11 @@ body{
     font-family: 'League Spartan', sans-serif;
 }
 header{
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+
+    font-size: 3rem;
     height: 10rem;
     background-image: url(images/bg-light-green.jpeg);
 }
