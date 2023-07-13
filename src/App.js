@@ -11,25 +11,38 @@ function App() {
     skills: [item.role, item.level, ...item.languages, ...item.tools]
   }));
 
-  const [isClicked, setClicked]= useState(false);
+  const [isClicked, setClicked]= useState(false);//to hide and show the seacch bar
   const [filterArray, setFilterArray]= useState([]);
   const [filterData, setFilterData]= useState(mergedData)
   const [selectedSkills, setSelectedSkills] = useState([]);
   
+  const validJobs = (item) => {
 
+    for (var filter of filterArray) {
+      if (!item.skills.includes(filter)) {
+        return false;
+      }
+    }
+    return true;
+  };
 
   const handleFiltered = (skill) => {
+    let filtered=[]
     if (!selectedSkills.includes(skill)) {
-      setSelectedSkills([...selectedSkills, skill]);
-      const filtered = mergedData.filter((item) =>
-        item.skills.includes(skill)
+      
+      filtered = mergedData.filter((item) =>
+       item.skills.includes(skill) &&
+        validJobs(item) 
       );
-    setFilterData(filtered);
-    setClicked(true)
-    setFilterArray((prev)=> [...prev,skill])
+      setSelectedSkills([...selectedSkills, skill]);
+      setFilterData(filtered);
+      setClicked(true)
+      setFilterArray((prev)=> [...prev,skill]);
 
   };
 }
+
+
 
   const Clear=(e)=>{
     setFilterData(mergedData);
@@ -40,10 +53,20 @@ function App() {
 
 const handleDelete=(skill)=>{
   if((filterArray.length-1) <1) {
-  Clear();
-  }else{
+          Clear();
+  }
+  else{
+    try {
+      
     const newArray = filterArray.filter((key) => key !== skill);
-  setFilterArray(newArray);
+        setFilterArray(newArray);
+        console.log("delete "+ newArray);
+        setSelectedSkills(newArray);
+    } 
+    catch (error) {
+      console.log(error);
+    }
+
 
   }
       
@@ -70,7 +93,6 @@ const handleDelete=(skill)=>{
       postedAt={item.postedAt}
       contract={item.contract}
       location={item.location}
-      clickButton={{}}
       skills={item.skills}
 
       />
